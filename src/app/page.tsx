@@ -46,9 +46,8 @@ export default function Home() {
           return (
             <>
               {letter}&nbsp;=&nbsp;
-              {morseTranslation.map((morse) => {
-                console.log("morse", morse);
-                return `${morse as string} `;
+              {morseTranslation.map((morse, i) => {
+                return <div key={i}>{morse as string}</div>;
               })}{" "}
               <br />
             </>
