@@ -6,6 +6,7 @@ import {
   FormContainer,
   InputBox,
   MorseContainer,
+  TranslationContainer,
 } from "./styles/styles";
 
 export default function Home() {
@@ -41,16 +42,14 @@ export default function Home() {
             conversionTable[formattedLetter as keyof typeof conversionTable] ||
             [];
 
-          console.log("morseTranslate", morseTranslation);
-
           return (
-            <>
+            <TranslationContainer key={`${letter}-${letterIndex}`}>
               {letter}&nbsp;=&nbsp;
               {morseTranslation.map((morse, i) => {
-                return <div key={i}>{morse as string}</div>;
+                return <div key={i}>{morse as string}&nbsp;</div>;
               })}{" "}
               <br />
-            </>
+            </TranslationContainer>
           );
         })}
       </MorseContainer>

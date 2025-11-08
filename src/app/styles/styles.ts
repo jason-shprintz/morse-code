@@ -14,10 +14,9 @@ export const MorseContainer = styled.div`
   margin: 10px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-wrap: wrap;
   overflow: auto;
 `;
 
@@ -36,7 +35,7 @@ export const FormContainer = styled.form`
 
 export const TranslationContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 `;
