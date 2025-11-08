@@ -49,6 +49,33 @@ A modern, real-time Morse code translator built with Next.js and React. Simply t
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
+## 🌐 Live Demo
+
+The application is automatically deployed to GitHub Pages: [https://jason-shprintz.github.io/morse-code/](https://jason-shprintz.github.io/morse-code/)
+
+## 🚀 Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Automatic Deployment
+- Every push to the `main` branch triggers an automatic build and deployment
+- The site will be available at `https://[username].github.io/morse-code/`
+
+### Manual Deployment
+If you want to deploy manually:
+
+1. **Build the static export**
+   ```bash
+   npm run build
+   ```
+
+2. **The static files will be generated in the `out` folder**
+
+3. **Enable GitHub Pages**
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Select "GitHub Actions" as the source
+
 ## 🎯 How to Use
 
 1. Type any text in the input textarea
@@ -110,9 +137,10 @@ morse-code/
 
 ```bash
 npm run dev      # Start development server
-npm run build    # Build for production
+npm run build    # Build for production and export static files
 npm run start    # Start production server
 npm run lint     # Run ESLint
+npm run export   # Build and export static files (alias for build)
 ```
 
 ## 🎨 Morse Code Reference
